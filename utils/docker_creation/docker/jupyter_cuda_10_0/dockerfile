@@ -1,0 +1,17 @@
+FROM nvcr.io/nvidia/cuda:10.0-runtime-ubuntu18.04
+
+RUN apt update && yes|apt upgrade
+RUN apt install python3-pip -y
+
+RUN python3 -m pip install --upgrade pip
+
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+# RUN pip install -r requirements.txt --no-cache-dir
+
+ENV PATH /usr/local/cuda-10.0/bin:${PATH}
+ENV LD_LIBRARY_PATH /usr/local/cuda-10.0/lib:/usr/local/cuda-10.0/lib64:${LD_LIBRARY_PATH}
+
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
+
+WORKDIR /home

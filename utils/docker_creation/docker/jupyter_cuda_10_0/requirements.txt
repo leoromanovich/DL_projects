@@ -1,0 +1,43 @@
+# Jupyter
+jupyter
+jupyter-client
+jupyter-console
+jupyter-core
+jupyterlab
+
+# Global libs
+tqdm
+xlrd
+nodejs
+pytest
+watermark
+psutil
+
+
+# DS and ML libs
+numpy
+numba
+scipy
+pandas
+pandas-profiling
+matplotlib
+seaborn
+bokeh
+scikit-learn
+lightgbm
+catboost
+xgboost
+
+bayesian-optimization
+hyperopt
+scikit-optimize
+
+
+# DL libs
+setuptools>=41.0.0
+tensorflow-gpu
+keras
+torch
+torchvision
+albumentations
+catalyst

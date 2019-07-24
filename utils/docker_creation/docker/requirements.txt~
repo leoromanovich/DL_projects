@@ -1,0 +1,31 @@
+# Jupyter
+jupyter
+jupyter-client
+jupyter-console
+jupyter-core
+jupyterlab
+
+# Global libs
+tqdm
+xlrd
+
+
+# DS and ML libs
+numpy
+scipy
+pandas
+pandas-profiling
+matplotlib
+seaborn
+-U scikit-learn
+lightgbm
+catboost
+xgboost
+
+# DL libs
+setuptools>=41.0.0
+tensorflow-gpu
+keras
+https://download.pytorch.org/whl/cu100/torch-1.0.1.post2-cp36-cp36m-linux_x86_64.whl
+torchvision
+

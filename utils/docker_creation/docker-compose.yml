@@ -1,0 +1,15 @@
+version: '3'
+services:
+  jupyter:
+    build:
+      context: ./docker/jupyter_cuda_10_0
+      dockerfile: dockerfile
+    ports:
+      - 8765:8888
+    volumes:
+      - ./PMP:/home/
+    environment:
+      GRANT_SUDO: "yes"
+    user: root
+    container_name: verkhovtsev
+
