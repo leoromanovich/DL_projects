@@ -36,4 +36,5 @@ dependencies:
   - pip:
       - albumentations
       - catalyst
+      - tensorflow-gpu==2.0.0-beta1
       - watermark
